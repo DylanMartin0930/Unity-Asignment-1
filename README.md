@@ -4,6 +4,7 @@ Rough layout of game environment and basic functionality
 **CONTROLS**
 - Basic movement -> WASD
 - Interact -> Z
+- Switch Scenes -> keys 1-5
 
 NOTES: 
 - Interactions with NPC above and below character is bugged
