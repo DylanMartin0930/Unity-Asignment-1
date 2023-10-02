@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -54,6 +55,29 @@ public class PlayerController : MonoBehaviour
         {
             Interact();
         }
+
+
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            SceneManager.LoadScene("Desert");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            SceneManager.LoadScene("GrassForrest");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            SceneManager.LoadScene("DesertCity");
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SceneManager.LoadScene("MarsRiver");
+        }
+         if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            SceneManager.LoadScene("Ocean Enviornment");
+        }
+     
     }
 
     void Interact(){

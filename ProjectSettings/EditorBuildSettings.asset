@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/GrassForrest.unity
+    guid: 11effda705ade446299328401a9ef61a
+  - enabled: 1
     path: Assets/Scenes/Desert.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/DesertCity.unity
+    guid: 6890dfbd95b125a49ab89c63c18a17ab
+  - enabled: 1
+    path: Assets/Scenes/Ocean Enviornment.unity
+    guid: 010c63fa7de652648bd08c05c9348dd3
   m_configObjects: {}
