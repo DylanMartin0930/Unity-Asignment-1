@@ -12,6 +12,8 @@ public class PlayerController : MonoBehaviour
     public LayerMask solidObjectsLayer; 
     public LayerMask interactablesLayer; 
     // Start is called before the first frame update
+
+    [SerializeField] private AudioSource moveSoundEffect;
     private void Awake()
     {
         animator = GetComponent<Animator>(); 
@@ -42,6 +44,8 @@ public class PlayerController : MonoBehaviour
                 var targetPos = transform.position; 
                 targetPos.x += input.x; 
                 targetPos.y += input.y; 
+
+                moveSoundEffect.Play();
 
                 if (IsWalkable(targetPos))
                 {
