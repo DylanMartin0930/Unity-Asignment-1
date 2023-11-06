@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+
+
+    public Vector3 position;
+    [SerializeField]public string level = "GrassForrest";
+    public int currentHealth; 
     public float moveSpeed;
     private bool isMoving; 
     private Vector2 input; //vector2 holds 2 values; X & Y 
@@ -20,6 +25,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     public void HandleUpdate()
     {
+
+
+
         if (!isMoving)
         {
             //get user input
@@ -51,10 +59,13 @@ public class PlayerController : MonoBehaviour
         }
         animator.SetBool("isMoving", isMoving); 
 
+
+
         if (Input.GetKeyDown(KeyCode.Z))
         {
             Interact();
         }
+      
 
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
@@ -114,5 +125,21 @@ public class PlayerController : MonoBehaviour
             return false; 
         }
         return true; 
+    }
+
+        public void SavePlayer() {
+        SaveSystem.SavePlayer(this); 
+    }
+    public void LoadPlayer(){
+        GameData data = SaveSystem.LoadPlayer();
+        
+        level = data.level;
+        currentHealth = data.currentHealth;
+
+        Vector3 position;
+        position.x = data.position[0];
+        position.y = data.position[1];
+        position.z = data.position[2];
+        transform.position = position; 
     }
 }
