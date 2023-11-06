@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 2a7a924abfdbb4ba8a1168c753b8da55
+  - enabled: 1
     path: Assets/Scenes/Desert.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    guid: 3d5b274c5a828fd4aa57e58768d8f9d3
   - enabled: 1
     path: Assets/Scenes/GrassForrest.unity
     guid: 11effda705ade446299328401a9ef61a
