@@ -3619,6 +3619,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1358663975}
+    - target: {fileID: 4184417894641071939, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
+      propertyPath: health
+      value: 35
+      objectReference: {fileID: 0}
     - target: {fileID: 6506812045522630243, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
@@ -3837,6 +3841,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1358663975}
+    - target: {fileID: 4184417894641071939, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
+      propertyPath: health
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6506812045522630243, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
       propertyPath: m_Name
       value: Enemy (3)
@@ -4142,6 +4150,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 1358663975}
+    - target: {fileID: 4184417894641071939, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
+      propertyPath: health
+      value: 25
+      objectReference: {fileID: 0}
     - target: {fileID: 6506812045522630243, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
       propertyPath: m_Name
       value: Enemy (2)

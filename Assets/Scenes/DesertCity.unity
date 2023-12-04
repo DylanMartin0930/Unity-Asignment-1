@@ -280,6 +280,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 473410043}
+    - target: {fileID: 4184417894641071939, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
+      propertyPath: health
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6506812045522630243, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
@@ -4199,11 +4203,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2341712151712498873, guid: 93e8b07d04a844827837e371af096586, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.97
+      value: -10.36
       objectReference: {fileID: 0}
     - target: {fileID: 2341712151712498873, guid: 93e8b07d04a844827837e371af096586, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.74
+      value: -1.38
       objectReference: {fileID: 0}
     - target: {fileID: 2341712151712498873, guid: 93e8b07d04a844827837e371af096586, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4435,6 +4439,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 473410043}
+    - target: {fileID: 4184417894641071939, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
+      propertyPath: health
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6506812045522630243, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
       propertyPath: m_Name
       value: Enemy (3)
@@ -4924,6 +4932,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 473410043}
+    - target: {fileID: 4184417894641071939, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
+      propertyPath: health
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6506812045522630243, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
       propertyPath: m_Name
       value: Enemy (4)
@@ -5161,6 +5173,10 @@ PrefabInstance:
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 473410043}
+    - target: {fileID: 4184417894641071939, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
+      propertyPath: health
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6506812045522630243, guid: b3fac4fb24efc455e8395ac4c7630cb1, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
