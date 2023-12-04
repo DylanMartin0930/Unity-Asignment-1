@@ -9,13 +9,15 @@ public class PlayerController : MonoBehaviour
 
     public Vector3 position;
     [SerializeField]public string level = "GrassForrest";
-    public int currentHealth; 
+    public PlayerHealth currentHealth; 
     public float moveSpeed;
     private bool isMoving; 
     private Vector2 input; //vector2 holds 2 values; X & Y 
     private Animator animator;
     public LayerMask solidObjectsLayer; 
-    public LayerMask interactablesLayer; 
+    public LayerMask interactablesLayer;
+    public GameObject attackBubble;  
+    public HealthBar healthbar; 
     // Start is called before the first frame update
 
     [SerializeField] private AudioSource moveSoundEffect; //for player steps
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour
                 targetPos.y += input.y; 
 
                 moveSoundEffect.Play();
+                attackBubble.transform.position = new Vector2(targetPos.x, targetPos.y);
 
                 if (IsWalkable(targetPos))
                 {
@@ -138,7 +141,8 @@ public class PlayerController : MonoBehaviour
         GameData data = SaveSystem.LoadPlayer();
         
         level = data.level;
-        currentHealth = data.currentHealth;
+        currentHealth.health = data.currentHealth;
+        healthbar.SetHealthBar(currentHealth.health); 
 
         Vector3 position;
         position.x = data.position[0];

@@ -26,7 +26,7 @@ public class PauseMenu : MonoBehaviour
         GameData data = SaveSystem.LoadPlayer();
         
         player.level = data.level;
-        player.currentHealth = data.currentHealth;
+        player.GetComponent<PlayerHealth>().health = data.currentHealth;
 
         Vector3 position;
         position.x = data.position[0];

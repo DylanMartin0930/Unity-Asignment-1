@@ -11,7 +11,7 @@ public class GameData
 
     public GameData (PlayerController player){
         level = player.level; 
-        currentHealth = player.currentHealth;
+        currentHealth = player.GetComponent<PlayerHealth>().health;
 
         position = new float[3]; 
         position[0] = player.transform.position.x; 
